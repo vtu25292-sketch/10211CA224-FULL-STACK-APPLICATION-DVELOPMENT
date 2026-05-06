@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tantraz Registration Form</title>
+</head>
+<body>
+<h2><b>Tantraz Registration Form</b></h2>
+<p>School of Computing – College Event</p>
+<form>
+  <label><b>Full Name:</b></label><br>
+  <input type="text" required placeholder="Enter your full name">
+  <br><br>
+  <label><b>Email Address:</b></label><br>
+  <input type="email" required placeholder="example@college.edu">
+  <br><br>
+  <label><b>Participation Category:</b></label><br>
+  <select required>
+    <option value="">-- Select Category --</option>
+    <option value="individual">Individual</option>
+    <option value="team">Team</option>
+    <option value="audience">Audience</option>
+  </select>
+  <br><br>
+  <b>T-Shirt Size:</b><br>
+  <input type="radio" name="size"> S<br>
+  <input type="radio" name="size"> M<br>
+  <input type="radio" name="size"> L<br>
+  <input type="radio" name="size"> XL
+  <br><br>
+  <b>Technical Interests:</b><br>
+  <input type="checkbox"> Artificial Intelligence<br>
+  <input type="checkbox"> Web Development<br>
+  <input type="checkbox"> Cloud Computing
+  <br><br>
+  <label><b>Expectations / Suggestions:</b></label><br>
+  <textarea
+    rows="4"
+    cols="40"
+    maxlength="200"
+    placeholder="Share your expectations or suggestions (max 200 characters)"
+  ></textarea>
+  <br><br>
+  <button>Register</button>
+</form>
+</body>
+</html>

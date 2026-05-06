@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Details</title>
+</head>
+<body>
+
+  <h1>Match Details</h1>
+  <pre id="output"></pre>
+
+  <script>
+    const matchDetails = {
+      venue: "City Arena",
+      teams: {
+        home: "Lions",
+        away: "Tigers"
+      },
+      score: {
+        home: 4,
+        away: 2
+      },
+      players: ["Alex", "Jordan", "Sam", "Chris"]
+    };
+
+    const {
+      venue,
+      teams: { home, away },
+      score: { home: homeScore, away: awayScore },
+      players: [firstPlayer, secondPlayer]
+    } = matchDetails;
+
+    document.getElementById("output").textContent =
+`Venue: ${venue}
+Home Team: ${home}
+Away Team: ${away}
+Score: ${homeScore} - ${awayScore}
+Key Players: ${firstPlayer}, ${secondPlayer}`;
+  </script>
+
+</body>
+</html>
